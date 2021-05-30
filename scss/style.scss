@@ -73,20 +73,17 @@ main{
   }
 }
 aside{
+  transition: transform .4s linear;
   width: 45%;
   .picture{
     height: 100vh;
     background: url("./img/11157373.jpg") no-repeat 60% center;
     background-size: cover;
-    transform: translateY(-100%);
-    transition: transform .4s linear;
   }
   .form{
     padding: 5% 8% 3%;
     height: 100vh;
     background: $main-black;
-    transform: translateY(-100%);
-    transition: transform .4s linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,15 +141,14 @@ aside{
         font-size: 16px;
         font-family: 'Montserrat', Arial, serif;
       }
+      .g-recaptcha{
+        text-align: center;
+        display: inline-block;
+      }
     }
   }
   &.active-form{
-    .form{
-      transform: translateY(0);
-    }
-    .picture{
-      transform: translateY(0);
-    }
+    transform: translateY(0%) !important;
   }
 }
 nav.main-menu{
@@ -343,6 +339,7 @@ nav.main-menu {
 }
 
 .main-content{
+  animation-delay: 1s;
   -webkit-animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -372,6 +369,7 @@ nav.main-menu {
 }
 
 .picture{
+  animation-delay: 1s;
   -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }

@@ -359,19 +359,16 @@ main {
       font-size: calc(16px + 8 * ((100vw - 320px) / 1700)); }
 
 aside {
+  transition: transform .4s linear;
   width: 45%; }
   aside .picture {
     height: 100vh;
     background: url("./img/11157373.jpg") no-repeat 60% center;
-    background-size: cover;
-    transform: translateY(-100%);
-    transition: transform .4s linear; }
+    background-size: cover; }
   aside .form {
     padding: 5% 8% 3%;
     height: 100vh;
     background: #000;
-    transform: translateY(-100%);
-    transition: transform .4s linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -421,10 +418,11 @@ aside {
         color: #fff;
         font-size: 16px;
         font-family: 'Montserrat', Arial, serif; }
-  aside.active-form .form {
-    transform: translateY(0); }
-  aside.active-form .picture {
-    transform: translateY(0); }
+      aside .form form .g-recaptcha {
+        text-align: center;
+        display: inline-block; }
+  aside.active-form {
+    transform: translateY(0%) !important; }
 
 nav.main-menu {
   font-family: 'Montserrat', Arial, serif;
@@ -590,6 +588,7 @@ nav.main-menu {
     opacity: 1; } }
 
 .main-content {
+  animation-delay: 1s;
   -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
 
@@ -614,6 +613,7 @@ nav.main-menu {
     opacity: 1; } }
 
 .picture {
+  animation-delay: 1s;
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
 
