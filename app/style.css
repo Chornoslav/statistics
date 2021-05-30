@@ -628,9 +628,10 @@ nav.main-menu {
     transform: translateZ(0);
     opacity: 1; } }
 
-#contactPage form label {
-  color: #000; }
-
-#contactPage form input, #contactPage form textarea {
-  background: #fff;
-  border: 1px solid #000; }
+#contactPage {
+  overflow-y: auto; }
+  #contactPage form label {
+    color: #000; }
+  #contactPage form input, #contactPage form textarea {
+    background: #fff;
+    border: 1px solid #000; }
