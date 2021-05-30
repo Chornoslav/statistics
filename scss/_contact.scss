@@ -1,0 +1,11 @@
+#contactPage {
+  form{
+    label {
+      color: $main-black;
+    }
+    input, textarea{
+      background: $main-white;
+      border: 1px solid $main-black;
+    }
+  }
+}
