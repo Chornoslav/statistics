@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact me - Solomiia Dmytriv</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="wrapper">
+            <div class="logo">
+                <a href="/">Solomiia Dmytriv</a>
+            </div>
+            <nav class="main-menu">
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Publication</a></li>
+                    <li><a href="/">Events</a></li>
+                    <li><a href="/">CV</a></li>
+                    <li><a href="/contact.html" class="active">Contact me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h1>Let's do something together? Leave your message here:</h1>
+        <form name="contact" method="POST" data-netlify="true" action="success.html">
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <div data-netlify-recaptcha="true"></div>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <a href="https://ua.linkedin.com/in/solomiia-dmytriv-a142547b" target="_blank">
+            <svg height="32px" width="32px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-linkedin fa-w-14 fa-2x"><path fill="#F8D948" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" class=""></path></svg>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url("PressStart2P-Regular.ttf");
+}
+
+@import 'normalize';
+$panteon: #F8D948;
+$zombie: rgb(133,71,115);
+
+body{
+  font-family: 'Press Start 2P', cursive;
+  background: rgb(1,1,2);
+  color: $zombie;
+  line-height: 1.44;
+}
+header{
+  padding: 20px 30px;
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    font-size: 18px;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+.container{
+  max-width: 1100px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  li{
+    display: inline-block;
+    margin: 10px 15px;
+    &:hover a{
+      color: $panteon;
+    }
+   a{
+     color: inherit;
+     text-decoration: none;
+     transition: .2s;
+     font-size: 14px;
+     &.active {
+       color: $panteon;
+     }
+   }
+  }
+}
