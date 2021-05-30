@@ -363,7 +363,6 @@ aside {
   width: 45%; }
   aside .picture {
     height: 100vh;
-    background: url("./img/11157373.jpg") no-repeat 60% center;
     background-size: cover; }
   aside .form {
     padding: 5% 8% 3%;
