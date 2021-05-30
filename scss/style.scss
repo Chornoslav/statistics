@@ -142,7 +142,6 @@ aside{
         font-family: 'Montserrat', Arial, serif;
       }
       .g-recaptcha{
-        text-align: center;
         display: inline-block;
       }
     }
@@ -219,7 +218,7 @@ nav.main-menu{
 .active-form #close{
   -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 @-webkit-keyframes slide-in-blurred-top {
   0% {
@@ -339,9 +338,9 @@ nav.main-menu {
 }
 
 .main-content{
-  animation-delay: 1s;
   -webkit-animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation-delay: 1s;
 }
 @-webkit-keyframes text-focus-in {
   0% {
@@ -369,9 +368,9 @@ nav.main-menu {
 }
 
 .picture{
-  animation-delay: 1s;
   -webkit-animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in .5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation-delay: 1s;
 }
 @-webkit-keyframes slide-in-bck-center {
   0% {

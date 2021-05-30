@@ -419,7 +419,6 @@ aside {
         font-size: 16px;
         font-family: 'Montserrat', Arial, serif; }
       aside .form form .g-recaptcha {
-        text-align: center;
         display: inline-block; }
   aside.active-form {
     transform: translateY(0%) !important; }
@@ -483,7 +482,7 @@ nav.main-menu {
 .active-form #close {
   -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation-delay: 2s; }
+  animation-delay: 1s; }
 
 @-webkit-keyframes slide-in-blurred-top {
   0% {
@@ -588,9 +587,9 @@ nav.main-menu {
     opacity: 1; } }
 
 .main-content {
-  animation-delay: 1s;
   -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 1s; }
 
 @-webkit-keyframes text-focus-in {
   0% {
@@ -613,9 +612,9 @@ nav.main-menu {
     opacity: 1; } }
 
 .picture {
-  animation-delay: 1s;
   -webkit-animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+  animation: text-focus-in 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 1s; }
 
 @-webkit-keyframes slide-in-bck-center {
   0% {
