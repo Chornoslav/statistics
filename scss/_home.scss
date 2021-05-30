@@ -2,7 +2,9 @@
   aside{
     width: 45%;
   }
-  main{
-    padding: 4% 7% 2%;
+  @media screen and (min-width: 1024px){
+    main{
+      padding: 4% 7% 2%;
+    }
   }
 }

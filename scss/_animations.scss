@@ -1,10 +1,8 @@
-nav.main-menu {
+nav.main-menu, .social {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-#homePage nav.main-menu {
-  animation-delay: 4s;
-}
+
 @-webkit-keyframes slide-in-left {
   0% {
     -webkit-transform: translateX(-1000px);
@@ -30,14 +28,6 @@ nav.main-menu {
   }
 }
 
-.social{
-  -webkit-animation: slide-in-blurred-bl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  animation: slide-in-blurred-bl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-  animation-delay: 2s;
-}
-#homePage .social{
-  animation-delay: 6s;
-}
 @-webkit-keyframes slide-in-blurred-bl {
   0% {
     -webkit-transform: translate(-1000px, 1000px) skew(-80deg, -10deg);
@@ -79,9 +69,7 @@ nav.main-menu {
   }
 }
 
-#homePage .main-content{
-  animation-delay: 1s;
-}
+
 .main-content{
   -webkit-animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: text-focus-in .8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
@@ -138,5 +126,21 @@ nav.main-menu {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 768px){
+  .social{
+    -webkit-animation: slide-in-blurred-bl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-bl 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation-delay: 2s;
+  }
+  #homePage .social{
+    animation-delay: 6s;
+  }
+  #homePage .main-content{
+    animation-delay: 1s;
+  }
+  #homePage nav.main-menu {
+    animation-delay: 4s;
   }
 }

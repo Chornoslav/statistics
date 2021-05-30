@@ -347,15 +347,13 @@ body {
 
 main {
   flex: 1;
-  padding: 5% 5% 3% 8%;
   padding: 5vh 5% 3vh 8%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start; }
   main .main-content {
-    margin: 2vh 0;
-    overflow-y: auto; }
+    margin: 2vh 0; }
     main .main-content .main-paragraph {
       margin: 3vh 0;
       font-size: calc(14px + 6 * ((100vw - 320px) / 2000)); }
@@ -433,7 +431,7 @@ nav.main-menu {
     content: '';
     display: block;
     position: absolute;
-    width: 60vh;
+    width: 60vw;
     height: 100%;
     left: 0;
     top: 0;
@@ -502,15 +500,13 @@ nav.main-menu {
 #homePage aside {
   width: 45%; }
 
-#homePage main {
-  padding: 4% 7% 2%; }
+@media screen and (min-width: 1024px) {
+  #homePage main {
+    padding: 4% 7% 2%; } }
 
-nav.main-menu {
+nav.main-menu, .social {
   -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#homePage nav.main-menu {
-  animation-delay: 4s; }
 
 @-webkit-keyframes slide-in-left {
   0% {
@@ -531,14 +527,6 @@ nav.main-menu {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1; } }
-
-.social {
-  -webkit-animation: slide-in-blurred-bl 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation: slide-in-blurred-bl 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation-delay: 2s; }
-
-#homePage .social {
-  animation-delay: 6s; }
 
 @-webkit-keyframes slide-in-blurred-bl {
   0% {
@@ -575,9 +563,6 @@ nav.main-menu {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1; } }
-
-#homePage .main-content {
-  animation-delay: 1s; }
 
 .main-content {
   -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -628,10 +613,96 @@ nav.main-menu {
     transform: translateZ(0);
     opacity: 1; } }
 
-#contactPage {
-  overflow-y: auto; }
-  #contactPage form label {
-    color: #000; }
-  #contactPage form input, #contactPage form textarea {
-    background: #fff;
-    border: 1px solid #000; }
+@media screen and (min-width: 768px) {
+  .social {
+    -webkit-animation: slide-in-blurred-bl 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation: slide-in-blurred-bl 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+    animation-delay: 2s; }
+  #homePage .social {
+    animation-delay: 6s; }
+  #homePage .main-content {
+    animation-delay: 1s; }
+  #homePage nav.main-menu {
+    animation-delay: 4s; } }
+
+@media screen and (max-height: 850px) {
+  #contactPage {
+    overflow-y: auto; } }
+
+#contactPage form label {
+  color: #000; }
+
+#contactPage form input, #contactPage form textarea {
+  background: #fff;
+  border: 1px solid #000; }
+
+#contactPage .social {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@media screen and (max-width: 1023px) {
+  main .main-content {
+    margin: 2vh auto; } }
+
+@media screen and (max-width: 1023px) {
+  main {
+    padding: 5vh 5% 3vh 8%; }
+  #homePage aside {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: auto;
+    height: 100vh; }
+    #homePage aside .picture {
+      display: none;
+      opacity: 0;
+      height: 0;
+      width: 0; }
+    #homePage aside .form {
+      height: auto;
+      min-height: 100vh;
+      padding-top: 40px; }
+      #homePage aside .form #close {
+        top: 10px;
+        right: 10px; }
+  aside {
+    display: none; }
+  .main-headline {
+    font-size: 34px; }
+  main .main-content .main-paragraph {
+    font-size: 18px; } }
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow: auto; }
+    body.overflow {
+      overflow: hidden; }
+  nav.main-menu {
+    width: 100%;
+    padding: 25px 0; }
+    nav.main-menu .menu-link {
+      font-size: 18px; }
+    nav.main-menu ul.menu {
+      justify-content: space-around; }
+      nav.main-menu ul.menu .menu-item {
+        margin: 0; }
+    nav.main-menu:after {
+      width: 100vw;
+      transform: translateX(-25px); }
+  .main-headline {
+    font-size: 34px; }
+  main .main-content {
+    margin: 5vh 0;
+    flex: 1; }
+    main .main-content .main-paragraph {
+      font-size: 16px; }
+  main, #homePage main {
+    padding: 0 25px 25px;
+    justify-content: flex-start; }
+  .social {
+    width: 100%;
+    justify-content: space-around; }
+    .social a {
+      margin: 0; } }

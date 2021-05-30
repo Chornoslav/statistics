@@ -6,6 +6,7 @@
     <link rel="icon"
           type="image/png"
           href="favicon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="homePage">
 
@@ -59,9 +60,11 @@
 <script>
     document.getElementById('contact-btn').addEventListener('click', function () {
         document.querySelector('aside').classList.add('active-form');
+        document.querySelector('body').classList.add('overflow');
     });
     document.getElementById('close').addEventListener('click', function () {
         document.querySelector('aside').classList.remove('active-form');
+        document.querySelector('body').classList.remove('overflow');
     });
 </script>
 <script>

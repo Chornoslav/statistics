@@ -12,9 +12,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "browser": "browser-sync start --server 'app' --files 'app'",
+    "browser": "browser-sync start --server 'app' --files 'app' --files 'scss'",
     "css": "node-sass scss/style.scss app/style.css -w",
-    "scss": "node-sass scss/*.scss app/style.css"
+    "scss": "node-sass scss/style.scss app/style.css"
   },
   "repository": {
     "type": "git",
