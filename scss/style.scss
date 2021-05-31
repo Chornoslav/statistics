@@ -304,7 +304,6 @@ nav.main-menu{
   }
   main .main-content{
     margin: 5vh 0;
-    flex: 1;
     .main-paragraph {
       font-size: 16px;
     }
@@ -319,5 +318,11 @@ nav.main-menu{
     a{
       margin: 0;
     }
+  }
+}
+@media screen and (max-width: 350px){
+  form{
+    max-width: 269px;
+    overflow: hidden;
   }
 }
