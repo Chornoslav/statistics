@@ -1,6 +1,13 @@
 #contactPage {
   @media screen and (max-height: 850px){
     overflow-y: auto;
+    //scrollbar dots jumping fix
+    aside{
+      transform: translateX(11px);
+      .dots{
+        margin: 10vh calc(8vw - 6px) 0 0;
+      }
+    }
   }
   form{
     label {
